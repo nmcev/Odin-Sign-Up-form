@@ -1,0 +1,99 @@
+@font-face {
+    font-family: myFont;
+    src: url(font/Norse-Bold.otf);
+}
+:root{
+    --prime-font: myFont;
+    --primary-light-hsl: 5,10%,85%;
+    --primary-hsl: 200,100%, 50%;
+    --primary-dark-hsl: 200,100%,6%;
+    --success-hsl : 100 , 60% , 50%;
+     --error-hsl : 0, 60% , 50%;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    padding: 0;
+    gap: 4rem;
+}
+
+.img-section{
+    background-image: url(imgs/background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 210%;
+    width: 20vw;
+}
+.odin-logo{
+    font-family: var(--prime-font);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 13rem;
+    font-size: 3rem;
+    padding: 1.25rem;
+}
+.odin-logo img{
+    width: 4rem;
+}
+.copy-right{
+    margin-top: 23.6rem;
+    margin-left: 2rem;
+}
+
+.para{
+    font-weight: bold;
+    max-width: 32rem;
+    padding: 3rem;
+    font-size: 1.25rem;
+}
+
+.form-container{
+box-shadow:  0 0 5px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 20px;;
+    width: 50rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.input-group input{
+    font-size: 1.25rem;
+    padding: .3em;
+    background-color: hsl(var(--primary-light-hsl), .3);
+    border: none;
+    outline: none;
+    border-radius: .25em;
+    color:rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.button{
+    margin-top: 4rem;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 1px  solid #E5E7EB;
+    background-color: #596D48;
+    font-size: 1.05rem;
+    font-weight: lighter;
+    cursor: pointer;
+    
+}
+.button:hover{
+    box-shadow:  0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    margin-top: 20px;
+}
+label{
+    position: absolute;
+    
+}
